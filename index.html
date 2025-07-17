@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Reminder</title>
+    <script>
+        // Function to show medicine reminder alert
+        function showMedicineReminder() {
+            alert('It\'s time to take your medicine!');
+        }
+
+        // Set the reminder time (current time + 1 minute for testing)
+        const reminderTime = new Date();
+        reminderTime.setMinutes(reminderTime.getMinutes() + 1);
+        
+        // Calculate the time difference in milliseconds
+        const timeDiff = reminderTime - new Date();
+        
+        // Set a timer to show the reminder
+        setTimeout(showMedicineReminder, timeDiff);
+    </script>
+</head>
+<body>
+    <h1>Medication Reminder System</h1>
+    <p>The system will show an alert when it's time to take your medicine.</p>
+    <p>(For testing, the reminder is set to trigger 1 minute from now)</p>
+</body>
+</html>

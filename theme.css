@@ -1,0 +1,150 @@
+/* Theme Styles */
+
+/* Base theme transitions */
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background: linear-gradient(to right, #2c3e50, #1a1a2e) !important;
+  color: #f4f4f4 !important;
+}
+
+/* Dashboard specific */
+body.dark-theme::before {
+  filter: blur(1.5px) brightness(0.7) !important;
+}
+
+/* Sidebar styles */
+.sidebar {
+  transition: background-color 0.3s;
+}
+
+body.dark-theme .sidebar {
+  background-color: rgba(72, 61, 139, 0.9) !important;
+}
+
+/* Content cards */
+.card, .settings-card, .reminder-card, .profile-card {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-theme .card,
+body.dark-theme .settings-card,
+body.dark-theme .reminder-card,
+body.dark-theme .profile-card {
+  background-color: rgba(45, 55, 72, 0.8) !important;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  transition: color 0.3s;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #b19cd9 !important;
+}
+
+/* Form elements */
+input, select, textarea, button {
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+  background-color: #3a4756 !important;
+  color: #f4f4f4 !important;
+  border: 1px solid #555 !important;
+}
+
+body.dark-theme button {
+  background-color: #5a4cad !important;
+}
+
+body.dark-theme button:hover {
+  background-color: #3a2c8d !important;
+}
+
+/* Tables */
+table {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+body.dark-theme table {
+  color: #f4f4f4 !important;
+}
+
+body.dark-theme th,
+body.dark-theme td {
+  border-color: #4a5568 !important;
+}
+
+body.dark-theme tr:nth-child(even) {
+  background-color: rgba(74, 85, 104, 0.2) !important;
+}
+
+/* Link colors */
+body.dark-theme a {
+  color: #b19cd9 !important;
+}
+
+body.dark-theme a:hover {
+  color: #d9c7ff !important;
+}
+
+/* Info cards and text */
+body.dark-theme .medication-name,
+body.dark-theme .reminder-details,
+body.dark-theme .profile-info-detail {
+  color: #cbd5e0 !important;
+}
+
+/* Profile elements */
+.profile-img-container,
+.logout-btn,
+.profile-link {
+  transition: background-color 0.3s;
+}
+
+body.dark-theme .profile-img-container,
+body.dark-theme .logout-btn,
+body.dark-theme .profile-link {
+  background-color: rgba(72, 61, 139, 0.9) !important;
+}
+
+body.dark-theme .profile-img-container:hover,
+body.dark-theme .logout-btn:hover,
+body.dark-theme .profile-link:hover {
+  background-color: rgba(52, 41, 119, 0.9) !important;
+}
+
+/* Profile info popup */
+.profile-info {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-theme .profile-info {
+  background-color: #2d3748 !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4) !important;
+}
+
+body.dark-theme .profile-info-header {
+  border-bottom: 1px solid #4a5568 !important;
+}
+
+/* Text colors */
+body.dark-theme .profile-info-name {
+  color: #f4f4f4 !important;
+}
+
+body.dark-theme .profile-info-detail {
+  color: #a0aec0 !important;
+} 

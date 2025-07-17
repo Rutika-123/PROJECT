@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedClock Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: linear-gradient(to right, #e6ddea, #cfdef3);
+    }.sidebar {
+  width: 250px;
+  background-color: #b19cd9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.sidebar h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.nav-item {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  color: #333;
+}
+
+.reminder-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+.reminder-card h2 {
+  margin-top: 0;
+  color: #6a5acd;
+}
+
+.reminder-time {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.medication-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits the color from the parent element */
+    cursor: pointer; /* Keeps the pointer cursor */
+  }
+
+  a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for clarity */
+  }
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>MedClock</h1>
+    <div class="nav-item"><a href="profile.php">Profile</a></div>
+    <div class="nav-item"><a href="upcomingre.php">Upcoming Reminders</a></div>
+    <div class="nav-item"><a href="addmedicine.php">Add medicine</a></div>
+    <div class="nav-item"><a href="hiostory.php">History</a></div>
+    <div class="nav-item">Settings</div>
+
+
+  </div>
+  <div class="main-content">
+    <div class="reminder-card">
+      <h2>Upcoming Reminder</h2>
+      <div class="reminder-time">Upcoming Reminders</a></div>
+    </div>
+  </div>
+</body>
+</html>
